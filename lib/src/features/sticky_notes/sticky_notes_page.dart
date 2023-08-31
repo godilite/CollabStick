@@ -9,18 +9,6 @@ class StickyNotesPage extends StatefulWidget {
 }
 
 class _StickyNotesPageState extends State<StickyNotesPage> {
-  late Rect rect = Rect.fromCenter(
-    center: MediaQuery.of(context).size.center(Offset.zero),
-    width: 400,
-    height: 300,
-  );
-
-  late Rect rect2 = Rect.fromCenter(
-    center: MediaQuery.of(context).size.center(Offset.zero),
-    width: 400,
-    height: 300,
-  );
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
