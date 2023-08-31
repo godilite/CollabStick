@@ -28,13 +28,23 @@ class _StickyNotesPageState extends State<StickyNotesPage> {
             ]),
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 InkWell(
-                  child: SizedBox(height: 50, child: Icon(Icons.touch_app_outlined)),
+                  onTap: () {},
+                  child: const SizedBox(
+                    height: 50,
+                    width: 50,
+                    child: Icon(Icons.touch_app_outlined),
+                  ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 InkWell(
-                  child: SizedBox(height: 50, child: Icon(Icons.sticky_note_2_outlined)),
+                  onTap: () {},
+                  child: const SizedBox(
+                    height: 50,
+                    width: 50,
+                    child: Icon(Icons.sticky_note_2_outlined),
+                  ),
                 )
               ],
             ),
@@ -46,9 +56,9 @@ class _StickyNotesPageState extends State<StickyNotesPage> {
                 StickyNoteCard(
                   color: Colors.red,
                 ),
-                StickyNoteCard(
-                  color: Colors.green,
-                ),
+                // StickyNoteCard(
+                //   color: Colors.green,
+                // ),
               ],
             ),
           ),
